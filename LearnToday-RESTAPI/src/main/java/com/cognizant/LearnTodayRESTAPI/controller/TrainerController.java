@@ -28,7 +28,7 @@ public class TrainerController {
 		} catch (DuplicateKeyException e) {
 			return new ResponseEntity<>("Bad request", HttpStatus.BAD_REQUEST);
 		}
-	}       
+	}                                                          
 	
 	@PutMapping("/{id}")
 	public ResponseEntity<Object> updatePassword(@PathVariable int id, @RequestBody Trainer trainer){
